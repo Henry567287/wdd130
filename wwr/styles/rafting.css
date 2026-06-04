@@ -3,11 +3,11 @@
     --secondary-color: #1f5fa8;
     --accent1-color: #ffffff;
     --accent2-color: #f4f4f4;
-    --background-color: #333333;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --text-color: #1a1a1a;
 }
+
 
 * {
     margin: 0;
