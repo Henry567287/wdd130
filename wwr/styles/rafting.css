@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #163a70;;
+    --primary-color: #163a70;
     --secondary-color: #1f5fa8;
     --accent1-color: #ffffff;
     --accent2-color: #f4f4f4;
     --background-color: #333333;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --text-color: #1a1a1a;
 }
 
 * {
@@ -27,16 +28,32 @@ footer {
     margin: 0 auto;
 }
 
-header{
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 20px;
-    background-color:var(--accent1-color)
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    justify-content: space-between;
+    border-radius: 0 0 12px 12px;
 }
 
 header img {
     width: 120px;
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav {
@@ -63,15 +80,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-header {
-color: var(--secondary-color);
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    border-radius: 0 0 12px 12px;
-}
-      
-
 .hero {
     position: relative;
 }
@@ -89,8 +97,8 @@ color: var(--secondary-color);
     text-align: center;
     opacity: 0.85;
     background-color: var(--primary-color);
-    color:var(--accent1-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
 .hero article {
@@ -98,10 +106,11 @@ color: var(--secondary-color);
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: var(--primary-color);
+    background: rgba(70, 48, 121, 0.803);
+    padding: 10px;
+    border-radius: 12px;
+    color: #fff;
     opacity: 0.85;
-    color: var(--accent1-color);
-    padding: 15px;
 }
 
 .hero article img {
@@ -111,33 +120,38 @@ color: var(--secondary-color);
     border-radius: 8px;
 }
 
-
 section h2 {
-    background-color:var(--primary-color);
-    color:var(--accent1-color);
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
     padding: 8px;
     text-align: center;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
-/* HISTORY SECTION */ 
+/* HISTORY SECTION */
+.history {
+    margin-top: 20px;
+}
+
 .history-content {
     display: grid;
     grid-template-columns: 1fr 300px 1fr;
     gap: 25px;
     align-items: center;
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 
-.history-left{
+.history-left {
     line-height: 1.8;
     text-align: justify;
+    color: var(--text-color);
 }
 
 .history-right {
     line-height: 1.8;
     text-align: justify;
+    color: var(--text-color);
 }
 
 .history-image {
@@ -153,12 +167,17 @@ section h2 {
     border-radius: 8px;
 }
 
+/* ADVENTURE SECTION */
+.adventures {
+    margin-top: 20px;
+}
+
 .adventure-scroll {
     display: flex;
     overflow-x: auto;
     gap: 15px;
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     scroll-behavior: smooth;
 }
 
@@ -192,27 +211,17 @@ section h2 {
 .adventure-scroll figcaption {
     margin-top: 8px;
     font-weight: bold;
+    color: var(--text-color);
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background: rgba(70, 48, 121, 0.803);;
-    padding: 10px;
-    border-radius: 12px;
-    color: #fff;
-}
-
-
-
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px 0;
-    margin-top:20px;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: var(--text-color);
 }
 
 .socialmedia {
@@ -220,7 +229,6 @@ footer {
     gap: 10px;
     background: none;
     padding: 0;
-    
 }
 
 .socialmedia img {
