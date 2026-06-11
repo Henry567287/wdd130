@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #163a70;
     --secondary-color: #1f5fa8;
@@ -239,4 +240,154 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+
+
+  /* 8. WIREFRAME LAYOUT SPECIFICATIONS*/
+
+
+.contact-wireframe-container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+}
+
+/* Section 1: Centered Header Typography */
+.company-heading-block {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-heading-block h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.company-heading-block p {
+    margin: 4px 0;
+    font-size: 1.1rem;
+}
+
+/* Section 2: Flex row containing Map (left) and Form (right) */
+.map-and-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.map-box {
+    flex: 1;
+    /* Left half */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form-box {
+    flex: 1;
+    /* Right half */
+}
+
+/* Internal Form Element Formatting */
+.wireframe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    width: 90px;
+    /* Aligns input boxes neatly next to labels */
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+/* Radio Layout configuration */
+.radio-container {
+    display: flex;
+}
+
+.radio-title {
+    width: 90px;
+    font-weight: bold;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-options label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Submission Action Styling */
+.wireframe-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wireframe-submit-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+/* Section 3: Bottom Area Container Border & Rows */
+.team-showcase-box {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.team-showcase-box h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team-row figure {
+    text-align: center;
+    flex: 1;
+}
+
+.team-row img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    background-color: #ddd;
+    border: 1px solid #999;
+    padding: 4px;
+    margin-bottom: 8px;
 }
