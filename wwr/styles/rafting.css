@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: var(--accent1-color);
 }
 
 header,
@@ -244,7 +244,7 @@ footer {
 
 
 
-  /* 8. WIREFRAME LAYOUT SPECIFICATIONS*/
+  /*  WIREFRAME LAYOUT SPECIFICATIONS*/
 
 
 .contact-wireframe-container {
@@ -254,23 +254,26 @@ footer {
     background-color: var(--accent-color);
 }
 
-/* Section 1: Centered Header Typography */
+/* Section 1: Company Heading Block */
 .company-heading-block {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .company-heading-block h1 {
     font-size: 2.2rem;
     margin-bottom: 8px;
-}
+    color: var(--primary-color) !important;
+    }
+
 
 .company-heading-block p {
     margin: 4px 0;
     font-size: 1.1rem;
 }
 
-/* Section 2: Flex row containing Map (left) and Form (right) */
+/* Section 2: Map and Form Container with Border */
 .map-and-form-row {
     display: flex;
     justify-content: space-between;
@@ -291,7 +294,7 @@ footer {
     /* Right half */
 }
 
-/* Internal Form Element Formatting */
+/* Internal Form Layout */
 .wireframe-form {
     display: flex;
     flex-direction: column;
@@ -305,7 +308,6 @@ footer {
 
 .input-group label {
     width: 90px;
-    /* Aligns input boxes neatly next to labels */
     font-weight: bold;
 }
 
@@ -317,7 +319,7 @@ footer {
     border-radius: 4px;
 }
 
-/* Radio Layout configuration */
+/* Radio Layout */
 .radio-container {
     display: flex;
 }
@@ -342,7 +344,7 @@ footer {
     cursor: pointer;
 }
 
-/* Submission Action Styling */
+/* Submission Button */
 .wireframe-submit-btn {
     width: 100%;
     padding: 10px;
@@ -358,7 +360,7 @@ footer {
     color: var(--accent1-color);
 }
 
-/* Section 3: Bottom Area Container Border & Rows */
+/* Section 3: Bottom Team Showcase */
 .team-showcase-box {
     border: 1px solid #333;
     padding: 20px;
