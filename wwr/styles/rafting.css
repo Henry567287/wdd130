@@ -277,7 +277,6 @@ footer {
 
 .map-box {
     flex: 1;
-    /* Left half */
     border: 1px solid #ccc;
     border-radius: 4px;
     overflow: hidden;
@@ -285,7 +284,6 @@ footer {
 
 .form-box {
     flex: 1;
-    /* Right half */
 }
 
 /* Internal Form Layout */
